@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BeWe</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css"
+          media="all">
+</head>
+<body>
+<div><img src="{{ url_for('static', filename='Logo-design3.png') }}"></div>
+<h1 class="title">EC2 Linux Centos 7 VM for Flask Application</h1>
+<h2><strong class="data">Istance ID:</strong> {{ ec2_data[0] }}</h2>
+<h2><strong class="data">Launch Time:</strong> {{ ec2_data[1] }}</h2>
+<h2><strong class="data">Image:</strong> {{ ec2_data[2] }}</h2>
+<h2><strong class="data">Istance Type:</strong> {{ ec2_data[3] }}</h2>
+<h2><strong class="data">Public IP Address:</strong> {{ ec2_data[4] }}</h2>
+<h2><strong class="data">Web Server:</strong> NGINX</h2>
+<h2><strong class="data">Framework:</strong> Python Flask</h2>
+<h2><strong class="data">Database:</strong> Aurora PostgreSQL</h2>
+</body>
+</html>
+
